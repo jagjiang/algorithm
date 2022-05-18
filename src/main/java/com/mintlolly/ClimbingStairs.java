@@ -1,5 +1,7 @@
 package com.mintlolly;
 
+import java.util.ArrayList;
+
 /**
  * Created on 2021/7/13
  *
@@ -15,12 +17,22 @@ package com.mintlolly;
  */
 public class ClimbingStairs {
     public Integer climbingStairs(int n){
-
-        return null;
+        if(1==n){
+            return 1;
+        }
+        if(2 == n){
+            return 2;
+        }
+        return climbingStairs(n-1)+climbingStairs(n-2);
     }
 
+    static int gcd(int a,int b){
+        return b != 0 ? gcd(b, a % b) : a;
+    }
     public static void main(String[] args) {
         ClimbingStairs climbingStairs = new ClimbingStairs();
-        System.out.println(climbingStairs.climbingStairs(4));
+//        System.out.println(climbingStairs.climbingStairs(3));
+
+        gcd(9,3);
     }
 }
