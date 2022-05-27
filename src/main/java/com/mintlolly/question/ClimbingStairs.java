@@ -1,6 +1,4 @@
-package com.mintlolly;
-
-import java.util.ArrayList;
+package com.mintlolly.question;
 
 /**
  * Created on 2021/7/13
